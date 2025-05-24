@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Assets/icons/css/all.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Link Shorter</title>
+  </head>
+  <body data-theme="light">
+    <!-- ***************************** Header Section ***************************** -->
+    <header>
+      <h1>GladiLink</h1>
+
+      <div class="header-icons">
+        <button id="ideaBTN">
+          <i class="fa-duotone fa-solid fa-lightbulb"></i>
+        </button>
+
+        <button id="themeBTN">
+          <i id="themeIcon" class="fa fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ***************************** Input URL Card Section ***************************** -->
+    <section id="inputCard">
+      <div class="card-container">
+        <h2>Paste Your URL Here</h2>
+
+        <div class="textarea-container">
+          <textarea name="urlInput" id="urlInput" placeholder=" " maxlength="1000" required></textarea>
+          <label for="urlInput" id="urlInputLabel">Long URL <span class="red-star">*</span></label>
+        </div>
+
+        <p id="URLhelperText">Please Enter a Valid URL</p>
+
+        <button id="generateBTN" class="disable" disabled>Generate Short Link</button>
+      </div>
+    </section>
+
+    <!-- ***************************** Short URL Result Card Section ***************************** -->
+    <section class="display-none" id="resultCard">
+      <div class="card-container">
+        <h2>Your short URL is ready</h2>
+
+        <a id="shortLink" target="_blank" href="#">Short Link</a>
+        <div class="copy-new-BTNs">
+          <button class="copy-BTN" id="copyBTN">Copy</button>
+          <button class="new-BTN" id="newBTN">New</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***************************** Footer Section ***************************** -->
+    <footer>
+      <div class="footer-logo">
+        <img id="logo" src="../Assets/logo/batman-black.png" height="10" alt="batman" />
+      </div>
+
+      <div class="footer-links">
+        <a href="#">API (soon)</a>
+        <a href="https://github.com/JavdanFar">Github</a>
+
+        <button id="versionBTN" class="version-modal-BTN">v1.0.0</button>
+      </div>
+    </footer>
+
+    <!-- ***************************** Idea Modal Section ***************************** -->
+    <div id="ideaModalContainer" class="modal-container">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Share Your Idea</h2>
+          <button id="ideaCloseBTN" class="closeBTN">X</button>
+        </div>
+
+        <div class="textarea-container">
+          <textarea name="ideaInput" id="ideaInput" placeholder=" " maxlength="2048" required></textarea>
+          <label for="ideaInput" id="ideaInputLabel">Your Idea <span class="red-star">*</span></label>
+        </div>
+
+        <p id="ideaHelperText"></p>
+
+        <button class="modalSubmitBTN disable" id="ideaSubmitBTN" disabled>Submit</button>
+      </div>
+    </div>
+
+    <!-- ***************************** Version Modal Section ***************************** -->
+    <div id="versionModalContainer" class="modal-container">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Version 1.0.0</h2>
+          <button id="versionModalColseBTN" class="closeBTN">X</button>
+        </div>
+        <p>This is First Virsion</p>
+        <p>You can make short any link you want in this website.</p>
+      </div>
+    </div>
+
+    <!-- ***************************** Toast Section ***************************** -->
+    <div id="toastMessage" class="toast-message">
+      <i id="toastMessageIcon" class=""></i>
+      <span id="toastText"></span>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
