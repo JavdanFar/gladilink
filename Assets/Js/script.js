@@ -21,13 +21,13 @@ themeBTN.addEventListener("click", () => {
     localStorage.setItem("theme", "light");
     body.theme = localStorage.getItem("theme");
     themeIcon.classList.replace("fa-sun", "fa-moon")
-    logo.src = "../Assets/logo/batman-black.png"
+    logo.src = "./Assets/logo/batman-black.png"
   }
   else {
     localStorage.setItem("theme", "dark");
     body.theme = localStorage.getItem("theme");
     themeIcon.classList.replace("fa-moon", "fa-sun")
-    logo.src = "../Assets/logo/batman-white.png"
+    logo.src = "./Assets/logo/batman-white.png"
   }
 });
 
