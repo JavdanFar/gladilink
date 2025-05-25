@@ -332,27 +332,6 @@ footer {
   }
 }
 
-
-@media (max-width: 576px) {
-  h1 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  .footer-logo img {
-    height: 20px;
-  }
-
-  .footer-logo p,
-  .footer-links p,
-  a {
-    font-size: 12px;
-  }
-}
-
 .closeBTN {
   color: var(--color-text);
   background-color: transparent;
@@ -371,7 +350,7 @@ footer {
   display: none;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   min-width: 250px;
   background-color: var(--color-foreground);
   color: var(--color-text);
@@ -396,5 +375,38 @@ footer {
 
   & i.fa-circle-xmark {
     color: var(--color-red);
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .footer-logo img {
+    height: 20px;
+  }
+
+  .footer-logo p,
+  .footer-links p,
+  a {
+    font-size: 12px;
+  }
+
+  .toast-message {
+    min-width: 260px;
+  }
+
+  #toastText {
+    font-size: 14px;
+  }
+
+  #toastMessageIcon {
+    font-size: 14px;
+
   }
 }
