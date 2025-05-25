@@ -1,4 +1,4 @@
-import { GBI } from "./lib.js"
+import { GBI } from "./lib.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   const ideaInput = GBI("ideaInput");
@@ -21,13 +21,13 @@ themeBTN.addEventListener("click", () => {
     localStorage.setItem("theme", "light");
     body.theme = localStorage.getItem("theme");
     themeIcon.classList.replace("fa-sun", "fa-moon")
-    logo.src = "/Assets/Logo/batman-black.png"
+    logo.src = "Assets/Logo/batmanBlack.png"
   }
   else {
     localStorage.setItem("theme", "dark");
     body.theme = localStorage.getItem("theme");
     themeIcon.classList.replace("fa-moon", "fa-sun")
-    logo.src = "/Assets/Logo/batman-white.png"
+    logo.src = "Assets/Logo/batmanWhite.png"
   }
 });
 
